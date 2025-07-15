@@ -147,6 +147,14 @@ The API was tested using a Go script to simulate concurrent requests for joining
 // Time Taken: 2m28.3080954s
 ```
 
+## Testing
+
+To test the API, you can use tools like Postman or Insomnia or Thunder Client. or u can use the test.go file
+
+```bash
+go run test.go
+```
+
 ### Example of Event Details Response
 
 When retrieving an event with ID 3, the response was as follows:
