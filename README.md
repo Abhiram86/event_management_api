@@ -4,6 +4,44 @@
 
 This API provides endpoints for managing events, including creating, retrieving, joining, and canceling bookings for events. It is built using Node.js and PostgreSQL.
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 14 or higher)
+- PostgreSQL database
+
+### Installation
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/event-management-api.git
+   cd event-management-api
+   ```
+
+2. **Create a `.env` File:**
+   In the root directory of the project, create a file named `.env` and add the following line:
+
+   ```plaintext
+   DATABASE_URI="FILL THIS"
+   ```
+
+   Replace `"FILL THIS"` with your PostgreSQL connection string from any cloud PostgreSQL provider.
+
+3. **Install Dependencies:**
+   Run the following command to install the required packages:
+
+   ```bash
+   npm install
+   ```
+
+4. **Run the Application:**
+   Start the server in development mode:
+   ```bash
+   npm run dev
+   ```
+
 ## Endpoints
 
 ### 1. Get Events
