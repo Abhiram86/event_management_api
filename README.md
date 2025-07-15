@@ -16,7 +16,7 @@ This API provides endpoints for managing events, including creating, retrieving,
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/event-management-api.git
+   git clone https://github.com/Abhiram86/event-management-api.git
    cd event-management-api
    ```
 
