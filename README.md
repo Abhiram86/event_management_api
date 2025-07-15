@@ -55,6 +55,25 @@ This API provides endpoints for managing events, including creating, retrieving,
   - `desc`: Sort events in descending order by start date.
   - `location`: Sort events by location.
 
+**Example Request:**
+for ascending order
+
+```plaintext
+http://localhost:3000/events?sortBy=asc
+```
+
+for descending order
+
+```plaintext
+http://localhost:3000/events?sortBy=desc
+```
+
+for sorting by location
+
+```plaintext
+http://localhost:3000/events?sortBy=location
+```
+
 **Response:**
 
 - Returns a list of upcoming events.
@@ -70,6 +89,12 @@ This API provides endpoints for managing events, including creating, retrieving,
 **Query Parameters:**
 
 - `users` (optional): If set, includes a list of users who have booked the event.
+
+**Example Request:**
+
+```plaintext
+http://localhost:3000/events/3?users=true
+```
 
 **Response:**
 
@@ -88,6 +113,12 @@ This API provides endpoints for managing events, including creating, retrieving,
   "location": "Event Location",
   "capacity": 100
 }
+```
+
+**Example Request:**
+
+```plaintext
+http://localhost:3000/events
 ```
 
 **Response:**
@@ -110,6 +141,12 @@ This API provides endpoints for managing events, including creating, retrieving,
 }
 ```
 
+**Example Request:**
+
+```plaintext
+http://localhost:3000/events/3/join
+```
+
 **Response:**
 
 - Returns a success message if the user successfully joins the event.
@@ -128,6 +165,12 @@ This API provides endpoints for managing events, including creating, retrieving,
 {
   "user_id": 1
 }
+```
+
+**Example Request:**
+
+```plaintext
+http://localhost:3000/events/3/cancel
 ```
 
 **Response:**
@@ -149,7 +192,7 @@ The API was tested using a Go script to simulate concurrent requests for joining
 
 ## Testing
 
-To test the API, you can use tools like Postman or Insomnia or Thunder Client. or u can use the test.go file
+To test the API, you can use tools like Postman, Insomnia, or Thunder Client, or you can use the `test.go` file provided in the repository.
 
 ```bash
 go run test.go
